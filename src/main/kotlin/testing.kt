@@ -1,3 +1,6 @@
 fun main(args : Array<String>) {
-    println("hello world");
+    var _name = setName();
+    _name.name = "sanju";
+//    println("my name is "+ _name.name);
+    println("my name is + ${_name.name}");
 }

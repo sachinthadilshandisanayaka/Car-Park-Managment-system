@@ -9,7 +9,10 @@ public class fileReader {
 //
 //    private String name;
 public static void main(String[] args) {
+
     int result = First.add(30,20);
     System.out.println(result);
+
+    System.out.println(First.offer(30, 0.6));
 }
 }

@@ -10,12 +10,15 @@ fun main(args: Array<String>) {
     var a2 = student()
     a2.name = "dilshan"
 
-    var a3 = a1.plus(a2)
+        // use + key word to operator overloading
+    var a3 = a1 + a2
     println(a3.name)
 
 }
     // extension function
-fun student.plus(obj : student) : student {
+    // infix function can get only one parameter
+    // operator overloading
+operator infix fun student.plus(obj : student) : student {
     var fullName = student()
     fullName.name = this.name + " " + obj.name
         return fullName

@@ -1,4 +1,5 @@
 //@file:JvmName("First")
+import java.math.BigInteger
 fun main(args: Array<String>) {
 //    var result = fileReader();
 //    result.name = "sanju"
@@ -14,14 +15,25 @@ fun main(args: Array<String>) {
     var a3 = a1 + a2
     println(a3.name)
 
+    // Recursion
+    var num = BigInteger("7")
+    println(fact(num, BigInteger.ONE))
+
 }
     // extension function
     // infix function can get only one parameter
     // operator overloading
-operator infix fun student.plus(obj : student) : student {
+    infix operator fun student.plus(obj : student) : student {
     var fullName = student()
     fullName.name = this.name + " " + obj.name
         return fullName
+}
+tailrec fun fact(num : BigInteger, res : BigInteger) : BigInteger {
+    return if(num == BigInteger.ZERO) {
+        res
+    } else {
+        fact( num - BigInteger.ONE, num*res )
+    }
 }
 
 fun add(x :Int, y : Int) : Int = x+y

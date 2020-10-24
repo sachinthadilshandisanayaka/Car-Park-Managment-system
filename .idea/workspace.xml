@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf6ae3a1-1173-4895-b656-16b2a33145ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/test.kt" afterDir="false" />
     </list>
@@ -61,7 +62,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Kotlin.TestKt">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="fileReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fileReader" />
       <module name="testKotlin" />
@@ -82,6 +83,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="testKotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="testKotlin" />
       <option name="VM_PARAMETERS" />
@@ -97,6 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.TestKt" />
         <item itemvalue="Application.fileReader" />
         <item itemvalue="Kotlin.First" />
@@ -127,21 +142,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="128" key="GridCell.Tab.0.bottom" timestamp="1603534226216">
+    <state width="1493" height="128" key="GridCell.Tab.0.bottom" timestamp="1603544560432">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603534226216" />
-    <state width="1493" height="128" key="GridCell.Tab.0.center" timestamp="1603534226216">
+    <state width="1493" height="128" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603544560432" />
+    <state width="1493" height="128" key="GridCell.Tab.0.center" timestamp="1603544560431">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1603534226216" />
-    <state width="1493" height="128" key="GridCell.Tab.0.left" timestamp="1603534226216">
+    <state width="1493" height="128" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1603544560431" />
+    <state width="1493" height="128" key="GridCell.Tab.0.left" timestamp="1603544560431">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1603534226216" />
-    <state width="1493" height="128" key="GridCell.Tab.0.right" timestamp="1603534226216">
+    <state width="1493" height="128" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1603544560431" />
+    <state width="1493" height="128" key="GridCell.Tab.0.right" timestamp="1603544560432">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="128" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1603534226216" />
+    <state width="1493" height="128" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1603544560432" />
   </component>
 </project>

@@ -1,24 +1,36 @@
 import fileHandler.readFile
+import input.GetVehicleType
+import input.ServiceType
+import operation.ServiceCheck
+import operation.VehicleTypeCheck
+import ui.ServiceErrorPrint
+import ui.UiServiceType
+import ui.VehicleType
+import javax.print.PrintService
+
+
 fun main(args : Array<String>) {
-    var readFileObject: MutableList<String>? = readFile()
-    println(readFileObject?.toString() + "\n" + readFileObject?.size)
-//    println("Vehicle Park Management System")
-//    println("1. Park \n2. Out\n3. Bill")
-//    print("Enter your requirement :")
-//    var oder = readLine()
-//
-//    if(oder.equals("park", true)) {
-//
-//    } else if(oder.equals("out", true)) {
-//
-//    } else if(oder.equals("bill", true)) {
-//
-//    } else {
-//
-//    }
-//
-//    println("1. Car\n2. Van\n3. ThreeWeel\n4. Bike\n5. LongVehicle")
-//    print("Enter vehicle type :")
+//    var readFileObject: MutableList<String>? = readFile()
+//    println(readFileObject?.toString() + "\n" + readFileObject?.size)
+    var uiServiceType =  UiServiceType().print()
+    var inputServiceType = ServiceType().printServices()
+    var seviceCheck = inputServiceType?.let { ServiceCheck().check(it) }
+
+    if(seviceCheck == null) {
+        var serviceErrorPrint = ServiceErrorPrint().print()
+        return;
+    } else if (seviceCheck == "park") {
+        var vehicleType = VehicleType().print()
+        var getVehicleType = GetVehicleType().getType()
+        var vehicleTypeCheck = getVehicleType?.let { VehicleTypeCheck().check(it) }
+        if(vehicleTypeCheck == null) {
+            return;
+        } else {
+            println(vehicleTypeCheck)
+        }
+
+    }
+
 //    var vehicleType = readLine();
 //    println(vehicleType)
 //    if(vehicleType.equals("car", true)) {

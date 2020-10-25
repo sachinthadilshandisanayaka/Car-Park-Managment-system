@@ -19,8 +19,10 @@ fun main(args: Array<String>) {
 //    // Recursion
 //    var num = BigInteger("7")
 //    println(fact(num, BigInteger.ONE))
-    var m = Fruit("tasty")
-    m.apple()
+//    var m = Fruit("tasty")
+//    m.apple()
+    var objectFourWeel = FourWeel(20)
+    println(objectFourWeel.car())
 }
 class Fruit constructor(var n: String= "nice"){
     var name:String=""
@@ -29,6 +31,20 @@ class Fruit constructor(var n: String= "nice"){
     }
     fun apple() {
         print("apple is : $name")
+    }
+}
+open class Vehicle(num : Int) {
+    init {
+        println("Car number is : $num")
+    }
+    // function override
+    open fun car() {
+        println("I'm a Car ")
+    }
+}
+class FourWeel(num : Int) : Vehicle(num) {
+    override fun car() {
+    println("car is override")
     }
 }
     // extension function
@@ -46,8 +62,6 @@ tailrec fun fact(num : BigInteger, res : BigInteger) : BigInteger {
         fact( num - BigInteger.ONE, num*res )
     }
 }
-
-fun add(x :Int, y : Int) : Int = x+y
 
 //@JvmOverloads
 //fun offer(x : Int, y : Double = 0.05) :Int {

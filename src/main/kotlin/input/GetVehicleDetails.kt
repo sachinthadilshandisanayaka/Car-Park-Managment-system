@@ -1,6 +1,6 @@
 package input
 
-class GetCarDetails {
+class GetVehicleDetails {
     fun getId(): String? {
         return readLine()
     }

@@ -1,14 +1,14 @@
 package service.park
 
-import input.GetCarDetails
-import ui.carDetail.CarDetail
+import input.GetVehicleDetails
+import ui.carDetail.VehicleDetail
 import java.util.*
 
 class ParkALongVehicle() {
     fun park() : TreeMap<String, String> {
         var detail = TreeMap<String, String>()
-        var carDetail = CarDetail()
-        var getCarDetails = GetCarDetails()
+        var carDetail = VehicleDetail()
+        var getCarDetails = GetVehicleDetails()
 
         carDetail.showOwner()
         detail["name"] = getCarDetails.getNumber().toString()

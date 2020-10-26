@@ -1,8 +1,8 @@
 package ui.carDetail
 
-class CarDetail() {
+class VehicleDetail() {
     fun showNumber(){
-        println("Enter Car number :")
+        println("Enter Vehicle number :")
     }
     fun showOwner(){
         println("Enter Driver name :")

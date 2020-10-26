@@ -1,4 +1,4 @@
-import fileHandler.readFile
+import fileHandler.WriteFile
 import input.GetVehicleType
 import input.ServiceType
 import operation.ServiceCheck
@@ -6,7 +6,6 @@ import operation.VehicleTypeCheck
 import ui.ServiceErrorPrint
 import ui.UiServiceType
 import ui.VehicleType
-import javax.print.PrintService
 
 
 fun main(args : Array<String>) {
@@ -22,11 +21,11 @@ fun main(args : Array<String>) {
     } else if (seviceCheck == "park") {
         var vehicleType = VehicleType().print()
         var getVehicleType = GetVehicleType().getType()
-        var vehicleTypeCheck = getVehicleType?.let { VehicleTypeCheck().check(it) }
-        if(vehicleTypeCheck == null) {
+        var vehicleDetail = getVehicleType?.let { VehicleTypeCheck().check(it) }
+        if(vehicleDetail == null) {
             return;
         } else {
-            println(vehicleTypeCheck)
+            var writeFile = WriteFile().writeFile(getVehicleType.toString(), vehicleDetail)
         }
 
     }

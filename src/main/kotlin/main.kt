@@ -26,6 +26,9 @@ fun main(args : Array<String>) {
             return;
         } else {
             var writeFile = WriteFile().writeFile(getVehicleType.toString(), vehicleDetail)
+            if(writeFile) {
+                println("done")
+            }
         }
 
     }

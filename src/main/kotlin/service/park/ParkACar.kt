@@ -13,7 +13,7 @@ class ParkACar() {
         detail["name"] = getCarDetails.getNumber().toString()
         
         carDetail.showId()
-        detail["Id"] = getCarDetails.getId().toString()
+        detail["id"] = getCarDetails.getId().toString()
         
         carDetail.showNumber()
         detail["number"] = getCarDetails.getNumber().toString()

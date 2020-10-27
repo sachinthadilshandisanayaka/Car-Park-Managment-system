@@ -31,6 +31,8 @@ fun main(args : Array<String>) {
             }
         }
 
+    } else if (seviceCheck == "out") {
+
     }
 
 //    var vehicleType = readLine();

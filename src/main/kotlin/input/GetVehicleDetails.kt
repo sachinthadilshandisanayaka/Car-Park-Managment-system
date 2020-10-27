@@ -5,8 +5,7 @@ class GetVehicleDetails {
         return readLine()
     }
     fun getOwnerName(): String? {
-        var name: String? = readLine()
-        return name
+        return readLine()
     }
     fun getNumber(): String? {
         return readLine()

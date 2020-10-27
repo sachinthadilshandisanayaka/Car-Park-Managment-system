@@ -1,21 +1,25 @@
 package operation
 
 import fileHandler.readFile
-import input.GetVehicleDetails
-import input.GetVehicleType
-import service.out.CalculateDuration
-import ui.BillShow
+import ui.VehicleEmpty
 
 class GetOutVehicle() {
-    fun calculate(vType : String, vNumber: String) {
+    fun calculate(vType : String, vNumber: String): Boolean {
+        var checker = 0
         var readerData = readFile()
-        if(readerData != null) {
-            for (rowData in readerData) {
+
+        if(readerData?.size != 0) {
+            for (rowData in readerData!!) {
                 var splitData = rowData.split(",")
-                println(splitData)
+                if(splitData[0].equals(vType, true) && splitData[3].equals(vNumber, true)) {
+                    checker = 1;
+                }
             }
+            return checker == 1
+
         } else {
-            println("No vehilce in the park !")
+            VehicleEmpty().print()
+            return false
         }
     }
 }

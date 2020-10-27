@@ -11,7 +11,7 @@ class WriteFile() {
             val file = File(filePath)
             file.appendText("$type,${vehicleDetail["name"]}," +
                     "${vehicleDetail["id"]},${vehicleDetail["number"]}," +
-                    "${vehicleDetail["color"]}\n\r")
+                    "${vehicleDetail["color"]}\n")
             true
         }catch (e : Exception) {
             false

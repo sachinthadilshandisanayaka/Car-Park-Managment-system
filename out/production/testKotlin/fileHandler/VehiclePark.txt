@@ -1,0 +1,6 @@
+car,sanju,1234,qwerrew123,green
+van,dilshan,7889u,fdwer,yellow
+van,kewin,789087u,njiojjio,pink
+van,sanju,980280500v,epqh2294,red
+bike,john,123456789v,qwer1234,green
+

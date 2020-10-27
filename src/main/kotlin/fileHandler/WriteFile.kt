@@ -9,9 +9,9 @@ class WriteFile() {
         return try {
             val filePath:String = "C:\\Users\\sachi dissanayake\\IdeaProjects\\testKotlin\\src\\main\\kotlin\\fileHandler\\VehiclePark.txt"
             val file = File(filePath)
-            file.appendText("[ $type, ${vehicleDetail["name"]}," +
-                    " ${vehicleDetail["id"]}, ${vehicleDetail["number"]}," +
-                    " ${vehicleDetail["color"]} ]\n\r")
+            file.appendText("$type,${vehicleDetail["name"]}," +
+                    "${vehicleDetail["id"]},${vehicleDetail["number"]}," +
+                    "${vehicleDetail["color"]}\n\r")
             true
         }catch (e : Exception) {
             false

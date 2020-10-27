@@ -3,6 +3,7 @@ import input.GetVehicleType
 import input.ServiceType
 import operation.ServiceCheck
 import operation.VehicleTypeCheck
+import service.out.CalculateDuration
 import ui.ServiceErrorPrint
 import ui.UiServiceType
 import ui.VehicleType
@@ -32,7 +33,7 @@ fun main(args : Array<String>) {
         }
 
     } else if (seviceCheck == "out") {
-
+        var outOperation = CalculateDuration().getVehicleData()
     }
 
 //    var vehicleType = readLine();

@@ -1,1 +1,0 @@
-[ van, sanju, 12345678i, wert4321, green ][ bike, john, 987654321v, fdsa4321, blue ][ longvehicle, max, 4326789i, bnmk5432, black ]

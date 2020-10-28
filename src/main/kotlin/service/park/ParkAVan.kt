@@ -24,7 +24,7 @@ class ParkAVan() :VehiclePark{
         detail["color"] = getCarDetails.getColor().toString()
 
         detail["park_Time"] = CurrentState().currentTimeAndDate().toString()
-        
+
         return detail;
     }
 }

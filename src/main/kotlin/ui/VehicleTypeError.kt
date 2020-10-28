@@ -1,7 +1,7 @@
 package ui
 
-class VehicleTypeError() {
-    fun print() {
+class VehicleTypeError() : BasicDeatilPrint{
+    override fun print() {
         println("Enter vehicle type correctly!")
     }
 }

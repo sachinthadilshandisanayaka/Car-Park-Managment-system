@@ -3,8 +3,8 @@ package operation
 import fileHandler.readFile
 import ui.VehicleEmpty
 
-class GetOutVehicle() {
-    fun calculate(vType : String, vNumber: String): Boolean {
+class GetOutVehicle() :AddBillOperation{
+    override fun calculate(vType : String, vNumber: String): Boolean {
         var checker = 0
         var readerData = readFile()
 

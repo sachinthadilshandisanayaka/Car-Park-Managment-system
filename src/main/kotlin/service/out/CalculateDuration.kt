@@ -3,10 +3,10 @@ package service.out
 import input.GetVehicleDetails
 import input.GetVehicleType
 import operation.GetOutVehicle
-import ui.OutVehicleValidationShow
+import ui.outVehicle.OutVehicleValidationShow
 
-class CalculateDuration() {
-    fun getVehicleData() {
+class CalculateDuration() : Calculation{
+    override fun getVehicleData() {
         OutVehicleValidationShow().printNumber()
         var VNumber = GetVehicleType().getType()
 

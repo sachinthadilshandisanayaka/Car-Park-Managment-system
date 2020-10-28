@@ -4,8 +4,8 @@ import service.park.*
 import ui.VehicleTypeError
 import java.util.*
 
-class VehicleTypeCheck() {
-    fun check(service: String) : TreeMap<String, String>?{
+class VehicleTypeCheck() : AddVehicleOperation{
+    override fun check(service: String) : TreeMap<String, String>?{
         if(service.equals("car", true)) {
             var list = ParkACar().park()
             return list

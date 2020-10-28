@@ -4,8 +4,8 @@ import input.GetVehicleDetails
 import ui.carDetail.VehicleDetail
 import java.util.*
 
-class ParkATreeWeel() {
-    fun park() : TreeMap<String, String> {
+class ParkATreeWeel():VehiclePark {
+    override fun park() : TreeMap<String, String> {
         var detail = TreeMap<String, String>()
         var carDetail = VehicleDetail()
         var getCarDetails = GetVehicleDetails()

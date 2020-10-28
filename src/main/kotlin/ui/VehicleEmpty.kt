@@ -1,7 +1,7 @@
 package ui
 
-class VehicleEmpty {
-    fun print() {
+class VehicleEmpty : BasicDeatilPrint {
+    override fun print() {
         println("No vehicle in the park !")
     }
 }

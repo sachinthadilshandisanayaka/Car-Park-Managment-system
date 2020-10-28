@@ -1,7 +1,7 @@
 package operation
 
-class ServiceCheck() {
-    fun check(service: String) : String? {
+class ServiceCheck() : AddSeviceOperation{
+    override fun check(service: String) : String? {
         if(service.equals("park", true)) {
             return "park"
         } else if(service.equals("out", true)) {

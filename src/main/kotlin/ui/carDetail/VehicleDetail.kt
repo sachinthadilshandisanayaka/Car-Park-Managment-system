@@ -1,16 +1,16 @@
 package ui.carDetail
 
-class VehicleDetail() {
-    fun showNumber(){
+class VehicleDetail() : VehicleData{
+    override fun showNumber(){
         println("Enter Vehicle number :")
     }
-    fun showOwner(){
+    override fun showOwner(){
         println("Enter Driver name :")
     }
-    fun showId(){
+    override fun showId(){
         println("Enter ID number :")
     }
-    fun showColor() {
+    override fun showColor() {
         println("Enter Color :")
     }
 }

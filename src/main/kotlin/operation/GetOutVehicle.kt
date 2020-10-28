@@ -1,12 +1,13 @@
 package operation
 
 import fileHandler.readFile
+import operation.TimeDefference.MinitsCalculation
+import operation.TimeFormate.GetLocaldatetime
+import operation.paymentCalculation.FactoryOfPayment
 import operation.timeZone.CurrentState
-import sun.util.resources.LocaleData
 import ui.VehicleEmpty
-import java.time.LocalDate
-import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import java.time.temporal.ChronoUnit
 
 class GetOutVehicle() :AddBillOperation{
     override fun calculate(vType : String, vNumber: String): Boolean {
@@ -19,8 +20,14 @@ class GetOutVehicle() :AddBillOperation{
                     if(splitData[0].equals(vType, true) && splitData[3].equals(vNumber, true)) {
                         var currentTime = CurrentState().currentTimeAndDate()
                         val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")
-                        var parkingTimeZone = LocalDateTime.parse(splitData[5], formatter)
+                        val parkingTimeZone = GetLocaldatetime().timeAndDate(splitData[5])
                         println(" $currentTime and $parkingTimeZone")
+                        val diff = MinitsCalculation().calculation(
+                                parkingTimeZone!!,
+                                currentTime!!
+                        )
+                        var balance = FactoryOfPayment().VehicleCost(vType, diff!!)
+                        println("Cost is Rs: $balance")
                         checker = 1;
                     }
             }

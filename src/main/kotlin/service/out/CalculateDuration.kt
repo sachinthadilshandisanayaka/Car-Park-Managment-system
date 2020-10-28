@@ -4,6 +4,7 @@ import input.GetVehicleDetails
 import input.GetVehicleType
 import operation.GetOutVehicle
 import ui.outVehicle.OutVehicleValidationShow
+import ui.userInputError.NullValueEntering
 
 class CalculateDuration() : Calculation{
     override fun getVehicleData() {
@@ -13,11 +14,19 @@ class CalculateDuration() : Calculation{
         OutVehicleValidationShow().printType()
         var VId = GetVehicleDetails().getId()
 
-        var bill = GetOutVehicle().calculate(VId.toString(), VNumber.toString())
-        if(bill) {
-            println("Founded")
+        if(VNumber.toString().trim() == "") {
+            NullValueEntering().print("Vehicle Number")
+            return
+        } else if ( VId.toString().trim() == ""){
+            NullValueEntering().print("Vehicle ID")
+            return
         } else {
-            println("Not founded")
+            var bill = GetOutVehicle().calculate(VId.toString(), VNumber.toString())
+            if(bill) {
+                println("Founded")
+            } else {
+                println("Not founded")
+            }
         }
     }
 }

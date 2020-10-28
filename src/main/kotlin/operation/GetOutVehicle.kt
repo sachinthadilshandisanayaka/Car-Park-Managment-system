@@ -10,10 +10,11 @@ class GetOutVehicle() :AddBillOperation{
 
         if(readerData?.size != 0) {
             for (rowData in readerData!!) {
-                var splitData = rowData.split(",")
-                if(splitData[0].equals(vType, true) && splitData[3].equals(vNumber, true)) {
-                    checker = 1;
-                }
+                println(rowData)
+                    var splitData = rowData.split(",")
+                    if(splitData[0].equals(vType, true) && splitData[3].equals(vNumber, true)) {
+                        checker = 1;
+                    }
             }
             return checker == 1
 

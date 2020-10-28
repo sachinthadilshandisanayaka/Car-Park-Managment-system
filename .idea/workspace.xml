@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf6ae3a1-1173-4895-b656-16b2a33145ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/VehicleNotFound.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/operation/timeZone/CurrentState.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/operation/timeZone/ParkTime.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testKotlin/fileHandler/VehiclePark.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testKotlin/fileHandler/VehiclePark.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testKotlin/service/out/CalculateDuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testKotlin/service/out/CalculateDuration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/fileHandler/VehiclePark.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fileHandler/VehiclePark.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/fileHandler/WriteFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fileHandler/WriteFile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/out/CalculateDuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/out/CalculateDuration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/park/ParkACar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/park/ParkACar.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,5 +207,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1603654386825" />
+    <state x="93" y="93" width="1350" height="648" key="dock-window-1" timestamp="1603908261320">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="dock-window-1/0.0.1536.834@0.0.1536.834" timestamp="1603908261320" />
   </component>
 </project>

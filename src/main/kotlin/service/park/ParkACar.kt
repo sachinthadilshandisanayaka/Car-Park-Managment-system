@@ -1,6 +1,8 @@
 package service.park
 import input.GetVehicleDetails
+import operation.timeZone.CurrentState
 import ui.carDetail.VehicleDetail
+import java.time.LocalDateTime
 import java.util.*
 
 class ParkACar() : VehiclePark{
@@ -20,6 +22,8 @@ class ParkACar() : VehiclePark{
         
         carDetail.showColor()
         detail["color"] = getCarDetails.getColor().toString()
+
+        detail["park_Time"] = CurrentState().currentTimeAndDate().toString()
 
         return detail;
     }

@@ -1,6 +1,10 @@
 //@file:JvmName("First")
 import java.math.BigInteger
 fun main(args: Array<String>) {
+    var a :String = "text"
+    var b :String? = ""
+    val l = b!!.length
+    println(l)
 //    var result = fileReader();
 //    result.name = "sanju"
 //    println(result.name)
@@ -21,8 +25,8 @@ fun main(args: Array<String>) {
 //    println(fact(num, BigInteger.ONE))
 //    var m = Fruit("tasty")
 //    m.apple()
-    var objectFourWeel = FourWeel(20)
-    println(objectFourWeel.car())
+//    var objectFourWeel = FourWeel(20)
+//    println(objectFourWeel.car())
 }
 class Fruit constructor(var n: String= "nice"){
     var name:String=""

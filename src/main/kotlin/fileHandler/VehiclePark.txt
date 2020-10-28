@@ -3,4 +3,6 @@ van,dilshan,7889u,fdwer,yellow
 van,kewin,789087u,njiojjio,pink
 van,sanju,980280500v,epqh2294,red
 bike,john,123456789v,qwer1234,green
-
+bike,banuka,7777333333v,POKL2344,black
+car,nilu,12332e,RTYU6543,yellow
+van,maniya,99900999393v,ewqq1111,gray

@@ -3,6 +3,7 @@ package service.out
 import input.GetVehicleDetails
 import input.GetVehicleType
 import operation.GetOutVehicle
+import ui.VehicleNotFound
 import ui.outVehicle.OutVehicleValidationShow
 import ui.userInputError.NullValueEntering
 
@@ -25,7 +26,7 @@ class CalculateDuration() : Calculation{
             if(bill) {
                 println("Founded")
             } else {
-                println("Not founded")
+                VehicleNotFound().print()
             }
         }
     }

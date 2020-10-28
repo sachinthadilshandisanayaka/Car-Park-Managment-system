@@ -9,7 +9,7 @@ import java.util.*
 class WriteFile(): WriteData {
     override fun writeFile(type: String, vehicleDetail: TreeMap<String, String>) : Boolean {
         return try {
-            val filePath:String = LocationOne().getLocation()
+            val filePath:String = LocationOne().getLocation() 
             val file = File(filePath)
             file.appendText("$type,${vehicleDetail["name"]}," +
                     "${vehicleDetail["id"]},${vehicleDetail["number"]}," +

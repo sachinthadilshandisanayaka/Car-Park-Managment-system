@@ -10,8 +10,8 @@ import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit
 
 class GetOutVehicle() :AddBillOperation{
-    override fun calculate(vType : String, vNumber: String): Boolean {
-        var checker = 0
+    override fun calculate(vType : String, vNumber: String): Any? {
+        var balance: Double? = null
         var readerData = readFile()
 
         if(readerData?.size != 0) {
@@ -21,21 +21,18 @@ class GetOutVehicle() :AddBillOperation{
                         var currentTime = CurrentState().currentTimeAndDate()
                         val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")
                         val parkingTimeZone = GetLocaldatetime().timeAndDate(splitData[5])
-                        println(" $currentTime and $parkingTimeZone")
                         val diff = MinitsCalculation().calculation(
                                 parkingTimeZone!!,
                                 currentTime!!
                         )
-                        var balance = FactoryOfPayment().VehicleCost(vType, diff!!)
-                        println("Cost is Rs: $balance")
-                        checker = 1;
+                        balance = FactoryOfPayment().VehicleCost(vType, diff!!)
                     }
             }
-            return checker == 1
+            return balance
 
         } else {
             VehicleEmpty().print()
-            return false
+            return balance
         }
     }
 }

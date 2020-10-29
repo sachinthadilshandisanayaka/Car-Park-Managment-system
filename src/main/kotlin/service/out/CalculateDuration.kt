@@ -4,6 +4,8 @@ import input.GetVehicleDetails
 import input.GetVehicleType
 import operation.GetOutVehicle
 import ui.VehicleNotFound
+import ui.billingSection.ExitVehicle
+import ui.billingSection.ExitWithBill
 import ui.outVehicle.OutVehicleValidationShow
 import ui.userInputError.NullValueEntering
 
@@ -23,8 +25,9 @@ class CalculateDuration() : Calculation{
             return
         } else {
             var bill = GetOutVehicle().calculate(VId.toString(), VNumber.toString())
-            if(bill) {
-                println("Founded")
+            if(bill != null) {
+                ExitWithBill().getBill(bill as Double)
+                return;
             } else {
                 VehicleNotFound().print()
             }

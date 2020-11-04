@@ -1,19 +1,20 @@
 package dataServer.mysqlDataBase.connection
 
 import dataServer.mysqlDataBase.connection.dataBaseAuth.FirstAuth
+import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.SQLException
 import java.util.*
 
 class JDBCDataBaseConnection() : GetConnection {
-    fun connection() {
+    fun connection(): Connection? {
         val connectionProp = Properties()
         connectionProp["user"] = FirstAuth().authUser()
         connectionProp["password"] = FirstAuth().authPassword()
 
-        try {
+        return try {
             Class.forName("com.mysql.jdbc.Driver").newInstance()
-            var conn = DriverManager.getConnection(
+            DriverManager.getConnection(
                     "jdbc:" + "mysql" + "://" +
                             "127.0.0.1" +
                             ":" + "3306" + "/" +
@@ -21,6 +22,7 @@ class JDBCDataBaseConnection() : GetConnection {
                     connectionProp)
         } catch (e : SQLException) {
             e.printStackTrace()
+            null
         }
     }
 }

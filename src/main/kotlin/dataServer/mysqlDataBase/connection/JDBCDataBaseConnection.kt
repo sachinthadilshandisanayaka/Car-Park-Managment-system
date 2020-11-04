@@ -1,5 +1,6 @@
 package dataServer.mysqlDataBase.connection
 
+import dataServer.mysqlDataBase.connection.dataBaseAuth.FirstAuth
 import java.sql.DriverManager
 import java.sql.SQLException
 import java.util.*
@@ -7,8 +8,8 @@ import java.util.*
 class JDBCDataBaseConnection() : GetConnection {
     fun connection() {
         val connectionProp = Properties()
-        connectionProp.put("user", "root")
-        connectionProp.put("password", "")
+        connectionProp["user"] = FirstAuth().authUser()
+        connectionProp["password"] = FirstAuth().authPassword()
 
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance()

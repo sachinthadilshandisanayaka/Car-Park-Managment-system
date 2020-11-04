@@ -1,6 +1,7 @@
 package dataServer.mysqlDataBase.insertData
 
 import dataServer.mysqlDataBase.connection.JDBCDataBaseConnection
+import dataServer.mysqlDataBase.connection.quary.InsertQuery
 import java.sql.ResultSet
 import java.sql.SQLException
 import java.sql.Statement
@@ -13,7 +14,8 @@ class PutData {
         try {
             val conn = JDBCDataBaseConnection().connection()
             stmt = conn!!.createStatement()
-            resultSet = stmt!!.executeQuery("INSERT INTO CarPark('') VALUE('')")
+            var query = InsertQuery().getQuery()
+            resultSet = stmt!!.executeQuery(query)
 
             if (stmt.execute("INSERT INTO CarPark('') VALUE('')")){
                 resultSet = stmt.resultSet

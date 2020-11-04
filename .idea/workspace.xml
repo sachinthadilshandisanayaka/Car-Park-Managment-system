@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf6ae3a1-1173-4895-b656-16b2a33145ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/mysqlDataBase/GetConnection.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fileHandler/FileLocation/GetLocation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/fileHandler/FileLocation/GetLocation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fileHandler/FileLocation/LocationOne.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/fileHandler/FileLocation/LocationOne.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fileHandler/ReadFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/fileHandler/ReadFile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fileHandler/VehiclePark.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/fileHandler/VehiclePark.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fileHandler/WriteData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/fileHandler/WriteData.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fileHandler/WriteFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/fileHandler/WriteFile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/operation/GetOutVehicle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/operation/GetOutVehicle.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/mysqlDataBase/connection/JDBCDataBaseConnection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dataServer/mysqlDataBase/GetConnection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataServer/mysqlDataBase/connection/GetConnection.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +35,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Kotlin File" />
         <option value="Class" />
         <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -71,10 +63,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/app/mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3229885" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="dataServer.mysqlDataBase.connection" />
       <recent name="ui.outVehicle" />
       <recent name="service.out" />
       <recent name="ui.carDetail" />
@@ -180,14 +176,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1604500925631" />
-    <state x="548" y="208" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1603898841066">
+    <state x="548" y="208" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1604502109141">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="548" y="208" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1603898841066" />
-    <state x="549" y="159" key="FileChooserDialogImpl" timestamp="1603602763292">
+    <state x="548" y="208" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1604502109141" />
+    <state x="549" y="159" key="FileChooserDialogImpl" timestamp="1604502473730">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="159" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1603602763292" />
+    <state x="549" y="159" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1604502473730" />
     <state width="1493" height="197" key="GridCell.Tab.0.bottom" timestamp="1603952623412">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -224,6 +220,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="349" y="160" key="IDE.errors.dialog/0.0.1536.834@0.0.1536.834" timestamp="1604500916726" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1604502480528">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1604502480528" />
     <state x="93" y="93" width="1350" height="648" key="dock-window-1" timestamp="1603908261320">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

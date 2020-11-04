@@ -17,7 +17,7 @@ class PutData {
             var query = InsertQuery().getQuery()
             resultSet = stmt!!.executeQuery(query)
 
-            if (stmt.execute("INSERT INTO CarPark('') VALUE('')")){
+            if (stmt.execute(query)){
                 resultSet = stmt.resultSet
             }
             while (resultSet!!.next()) {

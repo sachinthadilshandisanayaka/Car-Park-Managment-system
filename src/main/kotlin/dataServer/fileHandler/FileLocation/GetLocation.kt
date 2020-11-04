@@ -1,4 +1,4 @@
-package fileHandler.FileLocation
+package dataServer.fileHandler.FileLocation
 
 interface GetLocation {
     fun getLocation() : String

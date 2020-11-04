@@ -1,10 +1,10 @@
-package fileHandler
+package dataServer.fileHandler
 
 import java.io.File
 
 fun readFile() : MutableList<String>? {
     var data = mutableListOf<String>()
-    val fileName : String = "C:\\Users\\sachi dissanayake\\IdeaProjects\\testKotlin\\src\\main\\kotlin\\fileHandler\\VehiclePark.txt"
+    val fileName : String = "C:\\Users\\sachi dissanayake\\IdeaProjects\\testKotlin\\src\\main\\kotlin\\dataServer.fileHandler\\VehiclePark.txt"
     try {
         val file = File(fileName)
         file.forEachLine{

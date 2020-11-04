@@ -1,8 +1,6 @@
-package fileHandler
+package dataServer.fileHandler
 
-import com.sun.org.apache.xpath.internal.operations.Bool
-import fileHandler.FileLocation.GetLocation
-import fileHandler.FileLocation.LocationOne
+import dataServer.fileHandler.FileLocation.LocationOne
 import java.io.File
 import java.util.*
 

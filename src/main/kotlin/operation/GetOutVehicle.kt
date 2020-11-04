@@ -1,13 +1,12 @@
 package operation
 
-import fileHandler.readFile
+import dataServer.fileHandler.readFile
 import operation.TimeDefference.MinitsCalculation
 import operation.TimeFormate.GetLocaldatetime
 import operation.paymentCalculation.FactoryOfPayment
 import operation.timeZone.CurrentState
 import ui.VehicleEmpty
 import java.time.format.DateTimeFormatter
-import java.time.temporal.ChronoUnit
 
 class GetOutVehicle() :AddBillOperation{
     override fun calculate(vType : String, vNumber: String): Any? {

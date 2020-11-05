@@ -1,5 +1,7 @@
 package dataServer.mysqlDataBase.connection
 
-interface GetConnection {
+import java.sql.Connection
 
+interface GetConnection {
+    fun connection(): Connection?
 }

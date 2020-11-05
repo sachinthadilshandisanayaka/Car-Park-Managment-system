@@ -7,7 +7,7 @@ import java.sql.SQLException
 import java.util.*
 
 class JDBCDataBaseConnection() : GetConnection {
-    fun connection(): Connection? {
+    override fun connection(): Connection? {
         val connectionProp = Properties()
         connectionProp["user"] = FirstAuth().authUser()
         connectionProp["password"] = FirstAuth().authPassword()

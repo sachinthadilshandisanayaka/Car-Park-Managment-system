@@ -2,6 +2,7 @@ package dataServer.mysqlDataBase.insertData
 
 import dataServer.mysqlDataBase.connection.JDBCDataBaseConnection
 import dataServer.mysqlDataBase.connection.quary.InsertQuery
+import ui.database.DataBaseConnectionError
 import java.sql.ResultSet
 import java.sql.SQLException
 import java.sql.Statement
@@ -24,7 +25,8 @@ class PutData {
 
             }
         } catch (e:SQLException) {
-            e.printStackTrace()
+            DataBaseConnectionError().printError(e)
+//            e.printStackTrace()
         }
     }
 }

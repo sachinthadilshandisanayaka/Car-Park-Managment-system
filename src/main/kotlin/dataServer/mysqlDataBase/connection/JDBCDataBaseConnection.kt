@@ -1,6 +1,7 @@
 package dataServer.mysqlDataBase.connection
 
 import dataServer.mysqlDataBase.connection.dataBaseAuth.FirstAuth
+import ui.database.DataBaseConnectionError
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.SQLException
@@ -21,7 +22,7 @@ class JDBCDataBaseConnection() : GetConnection {
                             "",
                     connectionProp)
         } catch (e : SQLException) {
-            e.printStackTrace()
+            DataBaseConnectionError().printError(e)
             null
         }
     }

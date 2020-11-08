@@ -35,20 +35,4 @@ fun main(args : Array<String>) {
     } else if (seviceCheck == "out") {
         var outOperation = CalculateDuration().getVehicleData()
     }
-
-//    var vehicleType = readLine();
-//    println(vehicleType)
-//    if(vehicleType.equals("car", true)) {
-//
-//    } else if(vehicleType.equals("van", true)) {
-//
-//    } else if (vehicleType.equals("threeWeel", true)) {
-//
-//    } else if (vehicleType.equals("bike", true)) {
-//
-//    } else if (vehicleType.equals("longvehicle", true)) {
-//
-//    } else {
-//
-//    }
 }
